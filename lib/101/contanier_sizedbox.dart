@@ -32,7 +32,7 @@ class ContanierSizedboxLearn extends StatelessWidget {
                 maxHeight: 150,
               ),
               decoration: ProjectUtility.boxDecoration,
-              child: Center(child: Text("ErenKLYC")),
+              child: const Center(child: Text("ErenKLYC")),
             ),
           ),
         ],
@@ -43,7 +43,7 @@ class ContanierSizedboxLearn extends StatelessWidget {
 
 class ProjectUtility {
   static BoxDecoration boxDecoration = BoxDecoration(
-    gradient: LinearGradient(
+    gradient: const LinearGradient(
       begin: Alignment.centerLeft,
       end: Alignment.centerRight,
       colors: [Colors.deepPurple, Colors.pinkAccent],
@@ -52,7 +52,7 @@ class ProjectUtility {
     boxShadow: [
       BoxShadow(
         color: Colors.black.withOpacity(.50),
-        offset: Offset(0.5, 5),
+        offset: const Offset(0.5, 5),
       ),
     ],
   );

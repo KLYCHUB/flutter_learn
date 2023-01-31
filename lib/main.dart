@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
-import '101/scaffold_learn.dart';
+import '101/color_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,8 +16,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Learn',
-      theme: ThemeData.dark(),
-      home: const ScaffoldLearn(),
+      theme: ThemeData.dark().copyWith(
+        indicatorColor: ColorsItem.deepPurple,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.transparent,
+          centerTitle: true,
+          elevation: 0,
+          systemOverlayStyle: SystemUiOverlayStyle.light,
+        ),
+      ),
+      home: const ColorLearn(),
     );
   }
 }

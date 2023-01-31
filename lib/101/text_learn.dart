@@ -27,13 +27,13 @@ class TextLearnView extends StatelessWidget {
                   wordSpacing: 5,
                   fontWeight: FontWeight.bold),
             ),
-            Text("${adminName ?? ""}"),
+            Text(adminName ?? ""),
             Text(
               "Wellcome $userName",
               style: ProjectTextStyle().projectStyle,
             ),
             Text(
-              "${keys.Wellcome} $userName",
+              "${keys.wellcome} $userName",
               style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                     color: Colors.amber,
                     backgroundColor: Colors.redAccent,
@@ -47,7 +47,7 @@ class TextLearnView extends StatelessWidget {
 }
 
 class ProjectTextStyle {
-  final TextStyle projectStyle = TextStyle(
+  final TextStyle projectStyle = const TextStyle(
       color: Colors.white,
       decoration: TextDecoration.underline,
       fontSize: 15,
@@ -61,5 +61,5 @@ class ProjectColors {
 }
 
 class ProjectKeys {
-  final String Wellcome = "Merhaba";
+  final String wellcome = "Merhaba";
 }
