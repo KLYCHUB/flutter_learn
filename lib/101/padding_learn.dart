@@ -20,12 +20,12 @@ class _PaddinLearnState extends State<PaddinLearn> {
               padding: ProjectPadding.pagePaddingBottom,
               child: Container(
                 height: 100,
-                decoration: BoxDecoration(color: Colors.red),
+                decoration: const BoxDecoration(color: Colors.red),
               ),
             ),
             Container(
               height: 150,
-              decoration: BoxDecoration(color: Colors.blue),
+              decoration: const BoxDecoration(color: Colors.blue),
             ),
           ],
         ),

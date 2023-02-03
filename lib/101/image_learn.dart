@@ -17,7 +17,7 @@ class ImageLearn extends StatelessWidget {
           SizedBox(
             height: 150,
             width: 100,
-            child: Image.network(ProjectImage().randomImage),
+            child: Image.network(ProjectImage().randomImage,errorBuilder: (context, error, stackTrace) => const Icon(Icons.error),),
           ),
           Container(),
         ],
