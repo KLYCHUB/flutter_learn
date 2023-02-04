@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '101/color_learn.dart';
-import '101/custom_widget_learn.dart';
+import '101/list_tile.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,6 +18,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Learn',
       theme: ThemeData.dark().copyWith(
+        progressIndicatorTheme:
+            const ProgressIndicatorThemeData(color: Colors.white),
         indicatorColor: ColorsItem.deepPurple,
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.transparent,
@@ -26,7 +28,7 @@ class MyApp extends StatelessWidget {
           systemOverlayStyle: SystemUiOverlayStyle.light,
         ),
       ),
-      home: const CustomWidgetLearn(),
+      home: const ListTileLearn(),
     );
   }
 }
