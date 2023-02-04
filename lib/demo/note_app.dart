@@ -4,18 +4,17 @@ import 'package:flutter/services.dart';
 class NoteAppDemo extends StatelessWidget {
   NoteAppDemo({super.key});
 
-  final data = "Create Your First Note";
+  final data = "1461 Trabzonu Tanı";
   final data2 = "lorem impuso ciyano fatte beyne" * 10;
-  final data3 = "Create A Note";
-  final data4 = "Import Notes";
-
+  final data3 = "İçeriği Oku";
+  final data4 = "Not Ekle";
   @override
   Widget build(BuildContext context) {
-    var data3 = "Create A Note";
+    
     return Scaffold(
       backgroundColor: ProjectColor().blueGrey50,
       appBar: AppBar(
-        systemOverlayStyle: SystemUiOverlayStyle.dark,
+        systemOverlayStyle: SystemUiOverlayStyle.light,
       ),
       body: Padding(
         padding: ProjectPadding().horizontalPadding,
