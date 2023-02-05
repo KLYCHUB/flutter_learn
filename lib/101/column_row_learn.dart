@@ -13,10 +13,10 @@ class ColumnRowLearn extends StatelessWidget {
             child: Row(
               children: [
                 Expanded(
-                    child: Container(color: Color.fromARGB(255, 126, 23, 15))),
+                    child: Container(color: const Color.fromARGB(255, 126, 23, 15))),
                 Expanded(child: Container(color: Colors.blue)),
                 Expanded(
-                    child: Container(color: Color.fromARGB(255, 126, 23, 15))),
+                    child: Container(color: const Color.fromARGB(255, 126, 23, 15))),
                 Expanded(child: Container(color: Colors.blue)),
               ],
             ),
@@ -26,7 +26,7 @@ class ColumnRowLearn extends StatelessWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
+              children: const [
                 Text("GS"),
                 Text(" 1"),
                 Text("TS"),
@@ -39,10 +39,10 @@ class ColumnRowLearn extends StatelessWidget {
             child: Column(
               children: [
                 Expanded(
-                    child: Container(color: Color.fromARGB(255, 223, 23, 23))),
+                    child: Container(color: const Color.fromARGB(255, 223, 23, 23))),
                 Expanded(child: Container(color: Colors.yellow)),
                 Expanded(
-                    child: Container(color: Color.fromARGB(255, 223, 23, 23))),
+                    child: Container(color: const Color.fromARGB(255, 223, 23, 23))),
                 Expanded(child: Container(color: Colors.yellow)),
               ],
             ),
@@ -52,7 +52,7 @@ class ColumnRowLearn extends StatelessWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
+              children: const [
                 Text("05.02.2023"),
               ],
             ),
