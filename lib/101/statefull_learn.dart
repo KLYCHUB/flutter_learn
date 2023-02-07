@@ -43,14 +43,15 @@ class _StatefullLearnState extends State<StatefullLearn> {
             _countValue.toString(),
             style: Theme.of(context).textTheme.headlineMedium,
           ),
-          Placeholder(),
-          CounterHelloButton(),
+          const Placeholder(),
+          const CounterHelloButton(),
         ],
       ),
     );
   }
 
   Padding _deIncrementButton() {
+    // ignore: avoid_print
     print("deneme");
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10),

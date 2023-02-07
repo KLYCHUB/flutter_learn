@@ -10,6 +10,7 @@ class CounterHelloButton extends StatefulWidget {
 
 class _CounterHelloButtonState extends State<CounterHelloButton> {
   int _customCounter = 0;
+  // ignore: unused_field
   final String _hello = "Hello";
   @override
   Widget build(BuildContext context) {
@@ -19,6 +20,7 @@ class _CounterHelloButtonState extends State<CounterHelloButton> {
           ++_customCounter;
         });
       },
+      // ignore: prefer_interpolation_to_compose_strings
       child: Text(LngueItems().helloText + " " + "$_customCounter"),
     );
   }

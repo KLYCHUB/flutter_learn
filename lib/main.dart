@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
           systemOverlayStyle: SystemUiOverlayStyle.light,
         ),
       ),
-      home: LifecycleLearn(message: "ErenKLYC"),
+      home: const LifecycleLearn(message: "ErenKLYC"),
     );
   }
 }
