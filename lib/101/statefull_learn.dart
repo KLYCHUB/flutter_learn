@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learn/product/lang/langue_items.dart';
+
+import '../product/counter_hello_button.dart';
 
 class StatefullLearn extends StatefulWidget {
   const StatefullLearn({super.key});
@@ -8,24 +11,24 @@ class StatefullLearn extends StatefulWidget {
 }
 
 class _StatefullLearnState extends State<StatefullLearn> {
-  int countValue = 0;
+  int _countValue = 0;
 
-  void incrementValue() {
-    setState(() {
-      countValue += 1;
-    });
-  }
-
-  void deIncrementValue() {
-    setState(() {
-      countValue -= 1;
-    });
+  void _counterUpdate(bool isIncrement) {
+    if (isIncrement) {
+      setState(() {
+        _countValue += 1;
+      });
+    } else {
+      setState(() {
+        _countValue -= 1;
+      });
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(title: Text(LngueItems().helloText)),
       floatingActionButton: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -34,24 +37,28 @@ class _StatefullLearnState extends State<StatefullLearn> {
         ],
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        //mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Center(
-            child: Text(countValue.toString()),
+          Text(
+            _countValue.toString(),
+            style: Theme.of(context).textTheme.headlineMedium,
           ),
+          Placeholder(),
+          CounterHelloButton(),
         ],
       ),
     );
   }
 
   Padding _deIncrementButton() {
+    print("deneme");
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10),
       child: FloatingActionButton(
         onPressed: () {
-          deIncrementValue();
+          _counterUpdate(false);
         },
-        child: Icon(Icons.remove),
+        child: const Icon(Icons.remove),
       ),
     );
   }
@@ -59,9 +66,9 @@ class _StatefullLearnState extends State<StatefullLearn> {
   FloatingActionButton _incrementButton() {
     return FloatingActionButton(
       onPressed: () {
-        incrementValue();
+        _counterUpdate(true);
       },
-      child: Icon(Icons.add),
+      child: const Icon(Icons.add),
     );
   }
 }
