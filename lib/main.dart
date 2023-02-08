@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_learn/101/text_field_learn.dart';
 
 import '101/color_learn.dart';
-import '101/statefull_life_cycle_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,6 +18,17 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Learn',
       theme: ThemeData.dark().copyWith(
+        inputDecorationTheme: InputDecorationTheme(
+          filled: true,
+          fillColor: Colors.blueGrey[900],
+          border: const OutlineInputBorder(),
+          floatingLabelStyle: const TextStyle(
+            color: Colors.redAccent,
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            fontStyle: FontStyle.italic,
+          ),
+        ),
         progressIndicatorTheme:
             const ProgressIndicatorThemeData(color: Colors.white),
         indicatorColor: ColorsItem.deepPurple,
@@ -28,7 +39,8 @@ class MyApp extends StatelessWidget {
           systemOverlayStyle: SystemUiOverlayStyle.light,
         ),
       ),
-      home: const LifecycleLearn(message: "ErenKLYC"),
+      //home: const LifecycleLearn(message: "ErenKLYC"),
+      home: const TextfieldLearn(),
     );
   }
 }
