@@ -13,22 +13,22 @@ class _ListviewLearnState extends State<ListviewLearn> {
     return Scaffold(
       appBar: AppBar(),
       body: ListView(
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         children: [
           Text(
             "BİSMİLLAH",
             style: Theme.of(context).textTheme.headlineMedium,
             textAlign: TextAlign.center,
           ),
-          Divider(color: Colors.transparent),
+          const Divider(color: Colors.transparent),
           Container(height: 300, color: Colors.red),
-          Divider(color: Colors.transparent),
+          const Divider(color: Colors.transparent),
           Container(height: 300, color: Colors.blue),
-          Divider(color: Colors.transparent),
+          const Divider(color: Colors.transparent),
           SizedBox(
             height: 300,
             child: ListView(
-              physics: BouncingScrollPhysics(),
+              physics: const BouncingScrollPhysics(),
               scrollDirection: Axis.horizontal,
               children: [
                 Container(
@@ -58,10 +58,10 @@ class _ListviewLearnState extends State<ListviewLearn> {
               ],
             ),
           ),
-          Divider(color: Colors.transparent),
-          Icon(Icons.cancel, size: 30),
-          Divider(color: Colors.transparent),
-          _ListviewDemo()
+          const Divider(color: Colors.transparent),
+          const Icon(Icons.cancel, size: 30),
+          const Divider(color: Colors.transparent),
+          const _ListviewDemo()
         ],
       ),
     );
@@ -69,6 +69,7 @@ class _ListviewLearnState extends State<ListviewLearn> {
 }
 
 class _ListviewDemo extends StatefulWidget {
+  // ignore: unused_element
   const _ListviewDemo({super.key});
 
   @override
@@ -79,11 +80,14 @@ class __ListviewDemoState extends State<_ListviewDemo> {
   @override
   void dispose() {
     super.dispose();
+    // ignore: avoid_print
     print("ÇIKTI");
   }
 
+  // ignore: annotate_overrides
   void initState() {
     super.initState();
+    // ignore: avoid_print
     print("ÇALIŞTI");
   }
 
@@ -93,7 +97,7 @@ class __ListviewDemoState extends State<_ListviewDemo> {
       alignment: Alignment.center,
       height: 100,
       color: Colors.blueGrey,
-      child: Text(
+      child: const Text(
         "Lifecycle Deneme",
         textAlign: TextAlign.center,
       ),

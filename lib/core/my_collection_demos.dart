@@ -42,6 +42,7 @@ class _MyCollectionDemosState extends State<MyCollectionDemos> {
 
 class _CatagoryCard extends StatelessWidget {
   const _CatagoryCard({
+    // ignore: unused_element
     super.key,
     required CollectionModel model,
   }) : _model = model;
@@ -84,6 +85,7 @@ class CollectionModel {
 }
 
 class _CardText extends StatelessWidget {
+  // ignore: unused_element
   const _CardText({super.key, required this.text});
 
   final String text;

@@ -39,7 +39,6 @@ class MyApp extends StatelessWidget {
           systemOverlayStyle: SystemUiOverlayStyle.light,
         ),
       ),
-      //home: const LifecycleLearn(message: "ErenKLYC"),
       home: const NavigationLearn(),
     );
   }
