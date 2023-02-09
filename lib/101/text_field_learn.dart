@@ -57,8 +57,8 @@ class _TextfieldLearnState extends State<TextfieldLearn> {
 
 class InputDecarationTextfield {
   final _inputDecaration = InputDecoration(
-    prefixIcon: Icon(Icons.mail),
-    border: OutlineInputBorder(),
+    prefixIcon: const Icon(Icons.mail),
+    border: const OutlineInputBorder(),
     label: Text(LngueItems().textfieldText),
     hintText: LngueItems().textfieldHintText,
   );

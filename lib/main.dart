@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_learn/101/text_field_learn.dart';
 
 import '101/color_learn.dart';
+import 'core/color_demos_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       //home: const LifecycleLearn(message: "ErenKLYC"),
-      home: const TextfieldLearn(),
+      home: const ColorDemos(),
     );
   }
 }
