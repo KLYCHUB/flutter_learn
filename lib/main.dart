@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '101/color_learn.dart';
-import 'core/color_demos_view.dart';
+import '101/list_view_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       //home: const LifecycleLearn(message: "ErenKLYC"),
-      home: const ColorDemos(),
+      home: const ListviewLearn(),
     );
   }
 }
