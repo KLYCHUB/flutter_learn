@@ -28,6 +28,7 @@ class _ListviewLearnState extends State<ListviewLearn> {
           SizedBox(
             height: 300,
             child: ListView(
+              physics: BouncingScrollPhysics(),
               scrollDirection: Axis.horizontal,
               children: [
                 Container(
