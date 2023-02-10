@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 
 import '101/color_learn.dart';
 import '101/navigation_learn.dart';
+import 'demo/color_demos_view.dart';
+import 'demo/color_life_cycle_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,7 +41,7 @@ class MyApp extends StatelessWidget {
           systemOverlayStyle: SystemUiOverlayStyle.light,
         ),
       ),
-      home: const NavigationLearn(),
+      home: ColorLifeCycleView(),
     );
   }
 }
