@@ -9,8 +9,8 @@ class IndicatorLearn extends StatelessWidget {
       appBar: AppBar(
         actions: const [CustomIndicatorBar()],
       ),
-      body: Column(
-        children: const [
+      body: const Column(
+        children: [
           LinearProgressIndicator(),
         ],
       ),

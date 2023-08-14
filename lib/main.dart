@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '101/color_learn.dart';
-import 'demo/color_life_cycle_view.dart';
+import '202/tab_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,6 +32,16 @@ class MyApp extends StatelessWidget {
         progressIndicatorTheme:
             const ProgressIndicatorThemeData(color: Colors.white),
         indicatorColor: ColorsItem.deepPurple,
+        bottomAppBarTheme: const BottomAppBarTheme(
+          shape: CircularNotchedRectangle(),
+        ),
+        tabBarTheme: const TabBarTheme(
+          labelColor: Colors.green,
+          indicatorColor: Colors.white,
+          unselectedLabelColor: Colors.amber,
+          indicatorSize: TabBarIndicatorSize.label,
+          //isScrollable: true,
+        ),
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.transparent,
           centerTitle: true,
@@ -39,7 +49,7 @@ class MyApp extends StatelessWidget {
           systemOverlayStyle: SystemUiOverlayStyle.light,
         ),
       ),
-      home: const ColorLifeCycleView(),
+      home: const TabLearn(),
     );
   }
 }
