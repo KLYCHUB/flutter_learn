@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_learn/202/service/services_post_learn.dart';
 
 import '101/color_learn.dart';
-import '202/model_learn_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -49,7 +49,7 @@ class MyApp extends StatelessWidget {
           systemOverlayStyle: SystemUiOverlayStyle.light,
         ),
       ),
-      home: const ModelLearnView(),
+      home: const ServicePostLearn(),
     );
   }
 }
